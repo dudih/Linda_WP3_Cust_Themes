@@ -1,0 +1,57 @@
+
+.footer .left-side{
+	float: left;
+	/*border: 1px solid red;*/
+}
+.footer .left-side a{
+	display: block;
+	width: 122px;
+	height: 124px;
+	margin-top: 44px;
+	margin-right: 35px;
+	margin-left: 48px;
+	background: url("../images/theme/footer/twitter.png") no-repeat;
+}
+.footer .right-side{
+	width: 680px;
+	clear: right;
+	/*border: 1px solid green;*/
+	float: left;
+}
+.right-side > span{
+	display: block;
+	font-size: 20px;
+	color:#666;
+	padding-bottom: 20px;
+	text-shadow: 2px 2px #FFF;
+
+}
+.right-side > a{
+	display: block;
+	margin-top: 64px;
+	margin-bottom: 37px;
+	font-size: 36px;
+	color: #09C;
+	text-decoration: none;
+	text-shadow: 2px 2px #FFF;
+}
+.right-side > a:hover{
+	color: #06C;
+}
+nav li{
+	list-style: none;
+}
+nav a{
+	display: block;
+	width: 488px;
+	padding: 20px 0px;
+	font-size: 16px;
+	text-decoration: none;
+	text-shadow: 2px 2px #FFF;
+	color: #999;
+	border-top: 2px dotted #A1CADB;
+}
+nav a:hover{
+	color: #333
+}
+
