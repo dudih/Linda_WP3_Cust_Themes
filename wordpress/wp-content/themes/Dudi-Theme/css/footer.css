@@ -39,13 +39,17 @@
 	color: #06C;
 }
 nav#twitter-list{
+}
+twitter-list-frame{
 	overflow: hidden;
-	height: 320px;
+	height: 280px;
 }
 nav li{
 	list-style: none;
 }
 nav a{
+	height: 16px;
+	overflow: hidden;
 	display: block;
 	width: 488px;
 	padding: 20px 0px;

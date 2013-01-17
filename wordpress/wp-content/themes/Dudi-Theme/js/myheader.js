@@ -25,7 +25,7 @@
 
 //Ajax load of twitters
 var twitter_max_id = 0; //since what id to bring from twitter by ajax in the next call.
-var startTweets = 0;      //starting <a> tag to show on page
+//var startTweets = 0;      //starting <a> tag to show on page
 /*
 *getting responseText as json string and creating (returning)
 */
@@ -60,9 +60,7 @@ function showTwitters(isFirstCall)
   {
     $("#twitter-list").append( buildTwittersList( xmlhttp.responseText ) );
     if( isFirstCall==false ){
-      for (var i = (startTweets*5)+1; i<=(startTweets+1)*5; i++)
-        $("#twitter-list a:nth-child("+i+")").slideUp('slow');
-      startTweets++;
+      $("#twitter-list").animate({"marginTop": "-=296px"}, "500");
     }
   }
  }

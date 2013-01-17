@@ -17,7 +17,9 @@
 		<div class="right-side">
 			<a href="https://twitter.com/paul_irish">@Paul_Irish</a>
 			<span>somebody had to write this. thank you.</span>
-			<nav id="twitter-list"></nav>
+			<div class="twitter-list-frame">
+				<nav id="twitter-list"></nav>
+			</div>
 			<nav><a href="#" id="more-tweets">more tweets...</a></nav>
 		</div>
 
