@@ -38,6 +38,10 @@
 .right-side > a:hover{
 	color: #06C;
 }
+nav#twitter-list{
+	overflow: hidden;
+	height: 320px;
+}
 nav li{
 	list-style: none;
 }
@@ -54,4 +58,3 @@ nav a{
 nav a:hover{
 	color: #333
 }
-
