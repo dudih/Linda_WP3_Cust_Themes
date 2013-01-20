@@ -47,10 +47,11 @@
 			</div>
 		</div>
 
-		<?php
-	}
+	<?php } //end of function widget
 
-
+	/*
+	* what will be shown on the wp-admin GUI
+	*/
 	function form( $instance){
 		?>
 		<div for="<?php echo $this->get_field_id('title'); ?>">
@@ -64,12 +65,12 @@
 
 			<select id="<?php echo $this->get_field_id('body'); ?>" name="<?php echo $this->get_field_name('body'); ?>">
 				<?php for($i=2; $i<=5; $i++) : ?>
-			  		<option value="<?php echo $i?>"
-			  			<?php if( (esc_attr($instance['body'])) == $i ) :?>
-			  				selected
-			  			<?php endIf; ?>
-			  		><?php echo $i ?></option>
-			  	<?php endfor;?>
+				<option value="<?php echo $i?>"
+					<?php if( (esc_attr($instance['body'])) == $i ) :?>
+					selected
+					<?php endIf; ?>
+					><?php echo $i ?></option>
+				<?php endfor;?>
 			</select>
 		</div>
 		<?php
@@ -85,14 +86,3 @@ function TwitterTimelineWidget_init(){
 add_action('widgets_init', 'TwitterTimelineWidget_init');
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
