@@ -35,7 +35,7 @@ function buildTwittersList(responseText){
   if (jsonObject.length > 1){
     for(var i in jsonObject) {
       ans += '<a href="https://twitter.com/' +jsonObject[i]["screen_name"]+'/status/' +jsonObject[i]["id_str"]+'">' + jsonObject[i]["text"] + '</a>';
-      twitter_max_id = jsonObject[i]["id"];
+      twitter_max_id = jsonObject[i]["id"]; //next time start to bring tweets from twitter_max_id and up..
     }
   }else{
    document.getElementById('more-tweets').style.visibility = "hidden";
@@ -64,11 +64,12 @@ function showTwitters(isFirstCall)
   {
     $("#twitter-list").append( buildTwittersList( xmlhttp.responseText ) );
     if( isFirstCall==false ){
-      $("#twitter-list").animate({"marginTop": "-=290px"}, "500");
+      $("#twitter-list").animate({"marginTop": "-="+(numberOfTwittes*58)+"px"}, "500");
     }
   }
  }
- xmlhttp.open("GET","wp-content/themes/Dudi-Theme/ajax-twitter-call.php?twitter_max_id=" +twitter_max_id);
+
+ xmlhttp.open("GET","wp-content/themes/Dudi-Theme/ajax-twitter-call.php?twitter_max_id="+ twitter_max_id+ "&twitter_user_name="+ twitterUserName+ "&twitter_per_page="+ numberOfTwittes);
  xmlhttp.send();
 }
 

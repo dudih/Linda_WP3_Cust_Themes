@@ -13,7 +13,8 @@
 	background: url("../images/theme/footer/twitter.png") no-repeat;
 }
 .footer .right-side{
-	width: 680px;
+	/*width: 680px;*/
+	width: 500px;
 	clear: right;
 	/*border: 1px solid green;*/
 	float: left;
@@ -61,4 +62,9 @@ nav a{
 }
 nav a:hover{
 	color: #333
+}
+
+/* twetter */
+.tweeter{
+	height: 530px;
 }

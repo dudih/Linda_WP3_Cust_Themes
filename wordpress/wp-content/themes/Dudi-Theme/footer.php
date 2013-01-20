@@ -4,14 +4,12 @@
 			<a href="https://twitter.com/paul_irish">@Paul_Irish</a>
 			<span>somebody had to write this. thank you.</span>
 			<nav>
-				<?php wp_nav_menu( array('menu' => 'Footer Nav Menu') ); ?>
+				<?php //wp_nav_menu( array('menu' => 'Footer Nav Menu') ); ?>
 			</nav>
 		</div> -->
 
 
-
-
-		<div class="left-side">
+<!-- 		<div class="left-side">
 			<a href="https://twitter.com/paul_irish"></a>
 		</div>
 		<div class="right-side">
@@ -21,8 +19,7 @@
 				<nav id="twitter-list"></nav>
 			</div>
 			<nav><a id="more-tweets">more tweets...</a></nav>
-		</div>
-
+		</div> -->
 
 	</div>
 
