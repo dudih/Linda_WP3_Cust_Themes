@@ -25,18 +25,22 @@
 
 //Ajax load of twitters
 var twitter_max_id = 0; //since what id to bring from twitter by ajax in the next call.
-//var startTweets = 0;      //starting <a> tag to show on page
+
 /*
 *getting responseText as json string and creating (returning)
 */
 function buildTwittersList(responseText){
   var jsonObject = JSON.parse(responseText);
   var ans = '';
-  for(var i in jsonObject) {
-    ans += '<a href="#">' + jsonObject[i]["text"] + '</a>';
-    twitter_max_id = jsonObject[i]["id"];
-  }
-  return ans;
+  if (jsonObject.length > 1){
+    for(var i in jsonObject) {
+      ans += '<a href="#">' + jsonObject[i]["text"] + '</a>';
+      twitter_max_id = jsonObject[i]["id"];
+    }
+  }else{
+   document.getElementById('more-tweets').style.visibility = "hidden";
+ }
+ return ans;
 }
 
 /*
@@ -60,7 +64,7 @@ function showTwitters(isFirstCall)
   {
     $("#twitter-list").append( buildTwittersList( xmlhttp.responseText ) );
     if( isFirstCall==false ){
-      $("#twitter-list").animate({"marginTop": "-=296px"}, "500");
+      $("#twitter-list").animate({"marginTop": "-=290px"}, "500");
     }
   }
  }

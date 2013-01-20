@@ -40,7 +40,7 @@
 }
 nav#twitter-list{
 }
-twitter-list-frame{
+.twitter-list-frame{
 	overflow: hidden;
 	height: 280px;
 }
