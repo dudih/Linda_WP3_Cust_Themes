@@ -20,7 +20,7 @@
 			<div class="twitter-list-frame">
 				<nav id="twitter-list"></nav>
 			</div>
-			<nav><a href="#" id="more-tweets">more tweets...</a></nav>
+			<nav><a id="more-tweets">more tweets...</a></nav>
 		</div>
 
 

@@ -34,7 +34,7 @@ function buildTwittersList(responseText){
   var ans = '';
   if (jsonObject.length > 1){
     for(var i in jsonObject) {
-      ans += '<a href="#">' + jsonObject[i]["text"] + '</a>';
+      ans += '<a href="https://twitter.com/' +jsonObject[i]["screen_name"]+'/status/' +jsonObject[i]["id_str"]+'">' + jsonObject[i]["text"] + '</a>';
       twitter_max_id = jsonObject[i]["id"];
     }
   }else{
